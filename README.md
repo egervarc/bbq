@@ -44,6 +44,8 @@ bbq
 - Press `0`, `1`, `2` (or `3` for XQTR version) to switch between keyboard layers
 - Press any other key to quit
 
+![BBQ_usage_demo](bbq_demo.gif)
+
 ## Available Versions
 
 - **q20_original_layout.sh**: Original 3-layer layout as set by Zitao
