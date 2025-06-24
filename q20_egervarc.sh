@@ -1,13 +1,7 @@
 #!/bin/bash
 script="${0##*/}"
 DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-#title           : Zitao   ::   Hackberry Pi Keyboard Mapping
-#description     : List of keyboard layout for Hackberry Pi Q20
-#author          : XQTR   ::   http://cp737.net
-#date            : 2024/10/21
-#version         : 1.0
-#usage           : Make executable and run
-#notes           : For Hackberry Pi visit: https://github.com/ZitaoTech/Hackberry-Pi_Zero
+
 
 #LAYER0
 #LAYER0Layer 0
@@ -50,8 +44,8 @@ DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 #LAYER2
 #LAYER2Layer 2
 #LAYER2+----+----+----+----+ +------+ +---+----+----+----+
-#LAYER2|F1       |         | |      | |        |         |
-#LAYER2|         |         | |      | |        |         |
+#LAYER2|F1       |F5       | |LEFT  | |F11     |F12      |
+#LAYER2|         |         | |MOUSE | |        |         |
 #LAYER2+----+----+----+----+-+--+---+++---+----+----+----+
 #LAYER2||   |CURS|%   |    |[   |]   |<   |>   ||   |=   |
 #LAYER2|    | UP |    |    |    |    |    |    |    |    |
@@ -66,25 +60,6 @@ DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 #LAYER2     |     |     |               |LAY.1|LAY.2|
 #LAYER2     +-----+-----+---------------+-----+-----+
 #LAYER2
-#LAYER3
-#LAYER3Layer 3 / XQTR
-#LAYER3+----+----+----+----+ +------+ +---+----+----+----+
-#LAYER3|MOUSE    |H:LAY 4  | |MOUSE | |PAGE UP |PAGE DOWN|
-#LAYER3|RIGHT    |DT:SCRL.L| |RIGHT | |        |         |
-#LAYER3+----+----+----+----+-+--+---+++---+----+----+----+
-#LAYER3|F1  |F2  |F3  |F4  |F5  |F6  |F7  |F10 |F11 |F12 |
-#LAYER3|    |    |    |    |    |    |    |    |    |    |
-#LAYER3+----+----+----+----+----+----+----+----+----+----+
-#LAYER3|HOME|CURS|END |INS |MWHE|F8  |F9  |BRGT|VOL+|BKSP|
-#LAYER3|    | UP |    |    | UP |    |    | UP |    |    |
-#LAYER3+----+----+----+----+----+----+----+----+----+----+
-#LAYER3|CURS|CURS|CURS|DEL |MWHE|    |    |BRGT|VOL-|ENTR|
-#LAYER3|LEFT|DOWN|RIGT|    |DOWN|    |    |DOWN|    |    |
-#LAYER3+----+----++---+-+--+----+----+--+-+---++----+----+
-#LAYER3     |CTRL |ALT  |SHIFT          |ALT  |CTRL |
-#LAYER3     |     |     |               |     |     |
-#LAYER3     +-----+-----+---------------+-----+-----+
-#LAYER3
 clear
 key="0"
 while :
@@ -94,10 +69,9 @@ do
     0) cat $DIR/$script | grep "#LAYER0" | sed 's/#LAYER0//g' | sed '$ d';;
     1) cat $DIR/$script | grep "#LAYER1" | sed 's/#LAYER1//g' | sed '$ d';;
     2) cat $DIR/$script | grep "#LAYER2" | sed 's/#LAYER2//g' | sed '$ d';;
-    3) cat $DIR/$script | grep "#LAYER3" | sed 's/#LAYER3//g' | sed '$ d';;
     *) exit;;
   esac
-  read -n1 -p"Select Layer (0/1/2/3) Any other key to quit:" key
+  read -n1 -p"Select Layer (0/1/2) Any other key to quit:" key
   clear
 done
 
