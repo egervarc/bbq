@@ -16,23 +16,16 @@ BBQ is a simple bash script that shows you the keyboard mappings for the Hackber
 ## Installation
 
 1. Clone or download this repository
-2. Make the script executable:
+2. Add an alias to your `.bashrc`:
    ```bash
-   chmod +x q20_*.sh
-   ```
-3. Add an alias to your `.bashrc` or `.zshrc`:
-   ```bash
-   alias bbq="/path/to/your/q20_script.sh"
+   alias bbq="/path/to/your/bbq_script.sh"
    ```
    
    Example:
    ```bash
-   alias bbq="~/workspace/kblayout/q20_xqtr.sh"
+   alias bbq=~/bbq/bbq_original_layout.sh
    ```
-4. Reload your shell configuration:
-   ```bash
-   source ~/.bashrc
-   ```
+3. Restart your machine
 
 ## Usage
 
