@@ -16,6 +16,9 @@ BBQ is a simple bash script that shows you the keyboard mappings for the Hackber
 ## Installation
 
 1. Clone or download this repository
+   ```bash
+   git clone https://github.com/egervarc/bbq.git
+   ```
 2. Make the script executable:
    ```bash
    chmod +x bbq_*.sh
@@ -27,7 +30,7 @@ BBQ is a simple bash script that shows you the keyboard mappings for the Hackber
    
    Example:
    ```bash
-   alias bbq=~/bbq/bbq_original_layout.sh
+   echo 'alias bbq=~/bbq/bbq_original_layout.sh' >> ~/.bashrc
    ```
 4. Restart your machine
 
