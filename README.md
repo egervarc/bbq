@@ -41,9 +41,9 @@ bbq
 
 ## Available Versions
 
-- **q20_original_layout.sh**: Original 3-layer layout as set by Zitao
-- **q20_egervarc.sh**: Custom variant 
-- **q20_xqtr.sh**: Extended version with additional Layer 3 (Original Script was done by XQTR)
+- **bbq_original_layout.sh**: Original 3-layer layout as set by Zitao
+- **bbq_egervarc.sh**: Custom variant 
+- **bbq_xqtr.sh**: Extended version with additional Layer 3 (Original Script was done by XQTR)
 
 ## Credits
 
